@@ -1,9 +1,291 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.0">
-  <diagram name="第 1 页" id="_s4qMlxuXZWG0OA3zMK1">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.1">
+  <diagram name="AI智能分析引擎功能清单" id="_s4qMlxuXZWG0OA3zMK1">
+    <mxGraphModel dx="1783" dy="951" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="eJc6jVxUnBGlWZZIOV---297" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" value="AI智能分析引擎 - 功能清单" vertex="1">
+          <mxGeometry height="40" width="600" x="400" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---298" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=14;align=center;" value="&#xa;&#xa;AI智能分析引擎核心&#xa;(GPU推理服务)&#xa;&#xa;" vertex="1">
+          <mxGeometry height="80" width="1300" x="50" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---299" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;startSize=35;" value="模块一：基于视频流分析" vertex="1">
+          <mxGeometry height="620" width="620" x="50" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---300" parent="eJc6jVxUnBGlWZZIOV---299" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;startSize=25;" value="视频流接入" vertex="1">
+          <mxGeometry height="80" width="580" x="10" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---301" parent="eJc6jVxUnBGlWZZIOV---300" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;" value="RTSP实时流" vertex="1">
+          <mxGeometry height="35" width="110" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---302" parent="eJc6jVxUnBGlWZZIOV---300" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;" value="RTMP流" vertex="1">
+          <mxGeometry height="35" width="110" x="140" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---303" parent="eJc6jVxUnBGlWZZIOV---300" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;" value="HLS/DASH" vertex="1">
+          <mxGeometry height="35" width="110" x="270" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---304" parent="eJc6jVxUnBGlWZZIOV---300" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;" value="多路并发" vertex="1">
+          <mxGeometry height="35" width="110" x="400" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---305" parent="eJc6jVxUnBGlWZZIOV---299" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;startSize=25;" value="实时行为分析" vertex="1">
+          <mxGeometry height="220" width="280" x="10" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---306" parent="eJc6jVxUnBGlWZZIOV---305" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;align=left;" value="人员行为识别&#xa;· 入侵检测&#xa;· 徘徊检测&#xa;· 跌倒识别&#xa;· 奔跑检测" vertex="1">
+          <mxGeometry height="90" width="120" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---307" parent="eJc6jVxUnBGlWZZIOV---305" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;align=left;" value="安全规范识别&#xa;· 安全帽检测&#xa;· 工作服识别&#xa;· 口罩检测&#xa;· 烟火检测" vertex="1">
+          <mxGeometry height="90" width="120" x="150" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---308" parent="eJc6jVxUnBGlWZZIOV---305" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;align=left;" value="违规操作识别&#xa;· 区域闯入&#xa;· 违章操作&#xa;· 异常聚集&#xa;· 物品遗留" vertex="1">
+          <mxGeometry height="75" width="120" x="10" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---309" parent="eJc6jVxUnBGlWZZIOV---305" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;align=left;" value="设备状态监控&#xa;· 开关状态&#xa;· 指示灯识别&#xa;· 仪表盘读数&#xa;· 运行状态" vertex="1">
+          <mxGeometry height="75" width="120" x="150" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---310" parent="eJc6jVxUnBGlWZZIOV---299" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;startSize=25;" value="视频异常检测" vertex="1">
+          <mxGeometry height="220" width="280" x="310" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---311" parent="eJc6jVxUnBGlWZZIOV---310" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;align=left;" value="画面质量异常&#xa;· 画面模糊&#xa;· 亮度异常&#xa;· 信号丢失&#xa;· 噪点过多" vertex="1">
+          <mxGeometry height="90" width="120" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---312" parent="eJc6jVxUnBGlWZZIOV---310" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;align=left;" value="环境异常&#xa;· 烟雾检测&#xa;· 火焰识别&#xa;· 漏水检测&#xa;· 异常光照" vertex="1">
+          <mxGeometry height="90" width="120" x="150" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---313" parent="eJc6jVxUnBGlWZZIOV---310" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;align=left;" value="设备异常&#xa;· 设备移位&#xa;· 异常振动&#xa;· 异常声音&#xa;· 外观破损" vertex="1">
+          <mxGeometry height="75" width="120" x="10" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---314" parent="eJc6jVxUnBGlWZZIOV---310" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;align=left;" value="运行异常&#xa;· 跑冒滴漏&#xa;· 异常喷溅&#xa;· 烟气排放&#xa;· 液位异常" vertex="1">
+          <mxGeometry height="75" width="120" x="150" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---315" parent="eJc6jVxUnBGlWZZIOV---299" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;startSize=25;" value="视频流处理流程" vertex="1">
+          <mxGeometry height="210" width="580" x="10" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---316" parent="eJc6jVxUnBGlWZZIOV---315" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;" value="视频流&#xa;接入" vertex="1">
+          <mxGeometry height="40" width="80" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---317" edge="1" parent="eJc6jVxUnBGlWZZIOV---315" source="eJc6jVxUnBGlWZZIOV---316" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeWidth=2;strokeColor=#82b366;endArrow=classic;endFill=1;" target="eJc6jVxUnBGlWZZIOV---318" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---318" parent="eJc6jVxUnBGlWZZIOV---315" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;" value="实时&#xa;抽帧" vertex="1">
+          <mxGeometry height="40" width="80" x="120" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---319" edge="1" parent="eJc6jVxUnBGlWZZIOV---315" source="eJc6jVxUnBGlWZZIOV---318" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeWidth=2;strokeColor=#82b366;endArrow=classic;endFill=1;" target="eJc6jVxUnBGlWZZIOV---320" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---320" parent="eJc6jVxUnBGlWZZIOV---315" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;" value="预处理&#xa;(增强/去噪)" vertex="1">
+          <mxGeometry height="40" width="90" x="230" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---321" edge="1" parent="eJc6jVxUnBGlWZZIOV---315" source="eJc6jVxUnBGlWZZIOV---320" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeWidth=2;strokeColor=#82b366;endArrow=classic;endFill=1;" target="eJc6jVxUnBGlWZZIOV---322" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---322" parent="eJc6jVxUnBGlWZZIOV---315" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;" value="AI推理&#xa;(GPU)" vertex="1">
+          <mxGeometry height="40" width="80" x="350" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---323" edge="1" parent="eJc6jVxUnBGlWZZIOV---315" source="eJc6jVxUnBGlWZZIOV---322" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeWidth=2;strokeColor=#82b366;endArrow=classic;endFill=1;" target="eJc6jVxUnBGlWZZIOV---324" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---324" parent="eJc6jVxUnBGlWZZIOV---315" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;" value="结果&#xa;处理" vertex="1">
+          <mxGeometry height="40" width="80" x="460" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---325" edge="1" parent="eJc6jVxUnBGlWZZIOV---315" source="eJc6jVxUnBGlWZZIOV---324" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeWidth=2;strokeColor=#82b366;endArrow=classic;endFill=1;" target="eJc6jVxUnBGlWZZIOV---326" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---326" parent="eJc6jVxUnBGlWZZIOV---315" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;" value="实时&#xa;报警" vertex="1">
+          <mxGeometry height="40" width="40" x="530" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---327" parent="eJc6jVxUnBGlWZZIOV---315" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#82b366;fontSize=10;align=left;fontStyle=2;" value="关键特性：&#xa;• 低延迟(秒级)&#xa;• 持续监控&#xa;• 实时报警&#xa;• 多路并发" vertex="1">
+          <mxGeometry height="100" width="180" x="10" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---328" parent="eJc6jVxUnBGlWZZIOV---315" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#82b366;fontSize=10;align=left;fontStyle=2;" value="应用场景：&#xa;• 人员入侵监控&#xa;• 安全规范检查&#xa;• 设备状态监控&#xa;• 异常事件检测" vertex="1">
+          <mxGeometry height="100" width="180" x="210" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---329" parent="eJc6jVxUnBGlWZZIOV---315" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#82b366;fontSize=10;align=left;fontStyle=2;" value="技术参数：&#xa;• 抽帧频率：1-25fps&#xa;• 推理时长：&lt;500ms&#xa;• 报警延迟：&lt;2s&#xa;• 并发路数：≥16路" vertex="1">
+          <mxGeometry height="100" width="160" x="410" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---330" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;startSize=35;" value="模块二：基于图片分析" vertex="1">
+          <mxGeometry height="620" width="620" x="730" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---331" parent="eJc6jVxUnBGlWZZIOV---330" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;startSize=25;" value="图片来源" vertex="1">
+          <mxGeometry height="80" width="580" x="10" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---332" parent="eJc6jVxUnBGlWZZIOV---331" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" value="录像抽帧" vertex="1">
+          <mxGeometry height="35" width="110" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---333" parent="eJc6jVxUnBGlWZZIOV---331" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" value="定时抓拍" vertex="1">
+          <mxGeometry height="35" width="110" x="140" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---334" parent="eJc6jVxUnBGlWZZIOV---331" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" value="事件触发" vertex="1">
+          <mxGeometry height="35" width="110" x="270" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---335" parent="eJc6jVxUnBGlWZZIOV---331" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" value="人工上传" vertex="1">
+          <mxGeometry height="35" width="110" x="400" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---336" parent="eJc6jVxUnBGlWZZIOV---330" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;startSize=25;" value="外观缺陷识别" vertex="1">
+          <mxGeometry height="220" width="280" x="10" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---337" parent="eJc6jVxUnBGlWZZIOV---336" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=left;" value="设备破损&#xa;· 外壳破损&#xa;· 玻璃碎裂&#xa;· 线缆破损&#xa;· 紧固件松动" vertex="1">
+          <mxGeometry height="90" width="120" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---338" parent="eJc6jVxUnBGlWZZIOV---336" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=left;" value="锈蚀腐蚀&#xa;· 表面锈蚀&#xa;· 腐蚀痕迹&#xa;· 氧化变色&#xa;· 涂层剥落" vertex="1">
+          <mxGeometry height="90" width="120" x="150" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---339" parent="eJc6jVxUnBGlWZZIOV---336" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=left;" value="异物识别&#xa;· 悬挂异物&#xa;· 遗留物品&#xa;· 杂物堆积&#xa;· 动物闯入" vertex="1">
+          <mxGeometry height="75" width="120" x="10" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---340" parent="eJc6jVxUnBGlWZZIOV---336" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=left;" value="标识识别&#xa;· 设备标识&#xa;· 警示标识&#xa;· 编号识别&#xa;· 状态标识" vertex="1">
+          <mxGeometry height="75" width="120" x="150" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---341" parent="eJc6jVxUnBGlWZZIOV---330" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;startSize=25;" value="表计读数识别" vertex="1">
+          <mxGeometry height="220" width="280" x="310" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---342" parent="eJc6jVxUnBGlWZZIOV---341" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=left;" value="指针式仪表&#xa;· 压力表&#xa;· 温度表&#xa;· 液位计&#xa;· 流量计" vertex="1">
+          <mxGeometry height="90" width="120" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---343" parent="eJc6jVxUnBGlWZZIOV---341" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=left;" value="数字式仪表&#xa;· 数显表&#xa;· 电子屏&#xa;· LED显示&#xa;· LCD显示" vertex="1">
+          <mxGeometry height="90" width="120" x="150" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---344" parent="eJc6jVxUnBGlWZZIOV---341" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=left;" value="状态指示&#xa;· 指示灯颜色&#xa;· 开关状态&#xa;· 闸刀位置&#xa;· 阀门状态" vertex="1">
+          <mxGeometry height="75" width="120" x="10" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---345" parent="eJc6jVxUnBGlWZZIOV---341" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=left;" value="油位/液位&#xa;· 油位计&#xa;· 水位计&#xa;· 液位管&#xa;· 储液罐" vertex="1">
+          <mxGeometry height="75" width="120" x="150" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---346" parent="eJc6jVxUnBGlWZZIOV---330" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;startSize=25;" value="图片分析处理流程" vertex="1">
+          <mxGeometry height="210" width="580" x="10" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---347" parent="eJc6jVxUnBGlWZZIOV---346" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" value="图片&#xa;获取" vertex="1">
+          <mxGeometry height="40" width="80" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---348" edge="1" parent="eJc6jVxUnBGlWZZIOV---346" source="eJc6jVxUnBGlWZZIOV---347" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeWidth=2;strokeColor=#6c8ebf;endArrow=classic;endFill=1;" target="eJc6jVxUnBGlWZZIOV---349" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---349" parent="eJc6jVxUnBGlWZZIOV---346" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" value="质量&#xa;检测" vertex="1">
+          <mxGeometry height="40" width="80" x="120" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---350" edge="1" parent="eJc6jVxUnBGlWZZIOV---346" source="eJc6jVxUnBGlWZZIOV---349" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeWidth=2;strokeColor=#6c8ebf;endArrow=classic;endFill=1;" target="eJc6jVxUnBGlWZZIOV---351" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---351" parent="eJc6jVxUnBGlWZZIOV---346" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" value="预处理&#xa;(增强/校正)" vertex="1">
+          <mxGeometry height="40" width="90" x="230" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---352" edge="1" parent="eJc6jVxUnBGlWZZIOV---346" source="eJc6jVxUnBGlWZZIOV---351" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeWidth=2;strokeColor=#6c8ebf;endArrow=classic;endFill=1;" target="eJc6jVxUnBGlWZZIOV---353" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---353" parent="eJc6jVxUnBGlWZZIOV---346" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" value="AI分析&#xa;(批量)" vertex="1">
+          <mxGeometry height="40" width="80" x="350" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---354" edge="1" parent="eJc6jVxUnBGlWZZIOV---346" source="eJc6jVxUnBGlWZZIOV---353" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeWidth=2;strokeColor=#6c8ebf;endArrow=classic;endFill=1;" target="eJc6jVxUnBGlWZZIOV---355" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---355" parent="eJc6jVxUnBGlWZZIOV---346" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" value="结果&#xa;汇总" vertex="1">
+          <mxGeometry height="40" width="80" x="460" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---356" edge="1" parent="eJc6jVxUnBGlWZZIOV---346" source="eJc6jVxUnBGlWZZIOV---355" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeWidth=2;strokeColor=#6c8ebf;endArrow=classic;endFill=1;" target="eJc6jVxUnBGlWZZIOV---357" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---357" parent="eJc6jVxUnBGlWZZIOV---346" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" value="报告&#xa;生成" vertex="1">
+          <mxGeometry height="40" width="40" x="530" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---358" parent="eJc6jVxUnBGlWZZIOV---346" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c8ebf;fontSize=10;align=left;fontStyle=2;" value="关键特性：&#xa;• 高精度分析&#xa;• 批量处理&#xa;• 历史追溯&#xa;• 详细报告" vertex="1">
+          <mxGeometry height="100" width="180" x="10" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---359" parent="eJc6jVxUnBGlWZZIOV---346" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c8ebf;fontSize=10;align=left;fontStyle=2;" value="应用场景：&#xa;• 设备巡检&#xa;• 缺陷分析&#xa;• 表计读数&#xa;• 历史对比" vertex="1">
+          <mxGeometry height="100" width="180" x="210" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---360" parent="eJc6jVxUnBGlWZZIOV---346" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c8ebf;fontSize=10;align=left;fontStyle=2;" value="技术参数：&#xa;• 分辨率：≥1080P&#xa;• 准确率：≥95%&#xa;• 处理速度：&gt;100张/s&#xa;• 支持格式：JPG/PNG" vertex="1">
+          <mxGeometry height="100" width="160" x="410" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---361" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;startSize=35;" value="模块三：图片异常情况分析" vertex="1">
+          <mxGeometry height="400" width="620" x="50" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---362" parent="eJc6jVxUnBGlWZZIOV---361" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;startSize=25;" value="图片质量异常" vertex="1">
+          <mxGeometry height="320" width="190" x="10" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---363" parent="eJc6jVxUnBGlWZZIOV---362" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="模糊异常&#xa;图片模糊不清&#xa;无法识别特征&#xa;影响分析精度" vertex="1">
+          <mxGeometry height="65" width="170" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---364" parent="eJc6jVxUnBGlWZZIOV---362" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="亮度异常&#xa;过曝/欠曝&#xa;对比度不足&#xa;影响识别效果" vertex="1">
+          <mxGeometry height="65" width="170" x="10" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---365" parent="eJc6jVxUnBGlWZZIOV---362" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="噪点异常&#xa;图像噪点过多&#xa;存在干扰条纹&#xa;信号干扰严重" vertex="1">
+          <mxGeometry height="65" width="170" x="10" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---366" parent="eJc6jVxUnBGlWZZIOV---362" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="遮挡异常&#xa;镜头遮挡&#xa;视野受限&#xa;目标被遮挡" vertex="1">
+          <mxGeometry height="50" width="170" x="10" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---367" parent="eJc6jVxUnBGlWZZIOV---361" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;startSize=25;" value="拍摄环境异常" vertex="1">
+          <mxGeometry height="320" width="190" x="220" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---368" parent="eJc6jVxUnBGlWZZIOV---367" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="角度异常&#xa;拍摄角度不佳&#xa;视野不全&#xa;关键区域缺失" vertex="1">
+          <mxGeometry height="65" width="170" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---369" parent="eJc6jVxUnBGlWZZIOV---367" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="光照异常&#xa;逆光拍摄&#xa;光照不均&#xa;阴影严重" vertex="1">
+          <mxGeometry height="65" width="170" x="10" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---370" parent="eJc6jVxUnBGlWZZIOV---367" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="天气异常&#xa;雨雪天气&#xa;大雾影响&#xa;反光严重" vertex="1">
+          <mxGeometry height="65" width="170" x="10" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---371" parent="eJc6jVxUnBGlWZZIOV---367" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="设备异常&#xa;镜头污损&#xa;摄像头移位&#xa;焦距不准" vertex="1">
+          <mxGeometry height="50" width="170" x="10" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---372" parent="eJc6jVxUnBGlWZZIOV---361" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;startSize=25;" value="设备状态异常" vertex="1">
+          <mxGeometry height="320" width="180" x="430" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---373" parent="eJc6jVxUnBGlWZZIOV---372" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="信号异常&#xa;视频信号丢失&#xa;画面黑屏&#xa;雪花噪点" vertex="1">
+          <mxGeometry height="65" width="160" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---374" parent="eJc6jVxUnBGlWZZIOV---372" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="画面异常&#xa;画面卡顿&#xa;花屏/马赛克&#xa;色彩失真" vertex="1">
+          <mxGeometry height="65" width="160" x="10" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---375" parent="eJc6jVxUnBGlWZZIOV---372" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="时间异常&#xa;时间戳错误&#xa;时间不同步&#xa;时间缺失" vertex="1">
+          <mxGeometry height="65" width="160" x="10" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---376" parent="eJc6jVxUnBGlWZZIOV---372" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;align=left;" value="存储异常&#xa;录像丢失&#xa;文件损坏&#xa;存储空间不足" vertex="1">
+          <mxGeometry height="50" width="160" x="10" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---377" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;fontStyle=1;startSize=35;" value="支撑服务层" vertex="1">
+          <mxGeometry height="200" width="1300" x="50" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---378" parent="eJc6jVxUnBGlWZZIOV---377" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;align=left;" value="数据预处理&#xa;· 图像增强&#xa;· 去噪处理&#xa;· 尺寸归一化&#xa;· 格式转换" vertex="1">
+          <mxGeometry height="120" width="200" x="10" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---379" parent="eJc6jVxUnBGlWZZIOV---377" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;align=left;" value="结果后处理&#xa;· NMS非极大值抑制&#xa;· 置信度过滤&#xa;· 结果融合&#xa;· 坐标转换" vertex="1">
+          <mxGeometry height="120" width="200" x="230" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---380" parent="eJc6jVxUnBGlWZZIOV---377" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;align=left;" value="GPU资源调度&#xa;· 任务队列管理&#xa;· 负载均衡&#xa;· 资源分配&#xa;· 优先级调度" vertex="1">
+          <mxGeometry height="120" width="200" x="450" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---381" parent="eJc6jVxUnBGlWZZIOV---377" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;align=left;" value="算法模型管理&#xa;· 模型上传/下载&#xa;· 版本控制&#xa;· 模型切换&#xa;· 性能监控" vertex="1">
+          <mxGeometry height="120" width="200" x="670" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---382" parent="eJc6jVxUnBGlWZZIOV---377" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;align=left;" value="参数配置管理&#xa;· 置信度阈值&#xa;· IOU阈值&#xa;· 抽帧频率&#xa;· 分析区域设置" vertex="1">
+          <mxGeometry height="120" width="200" x="890" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---383" parent="eJc6jVxUnBGlWZZIOV---377" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;align=left;" value="日志监控&#xa;· 推理日志&#xa;· 错误日志&#xa;· 性能日志&#xa;· 调试日志" vertex="1">
+          <mxGeometry height="120" width="180" x="1110" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---384" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;fontStyle=1;startSize=35;" value="输出结果" vertex="1">
+          <mxGeometry height="150" width="1300" x="50" y="1510" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---385" parent="eJc6jVxUnBGlWZZIOV---384" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;align=left;" value="缺陷信息&#xa;· 缺陷类型&#xa;· 缺陷位置&#xa;· 严重程度&#xa;· 截图证据" vertex="1">
+          <mxGeometry height="80" width="200" x="10" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---386" parent="eJc6jVxUnBGlWZZIOV---384" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;align=left;" value="报警消息&#xa;· 实时报警&#xa;· 报警级别&#xa;· 推送通知&#xa;· 报警确认" vertex="1">
+          <mxGeometry height="80" width="200" x="230" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---387" parent="eJc6jVxUnBGlWZZIOV---384" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;align=left;" value="统计报表&#xa;· 检测统计&#xa;· 趋势分析&#xa;· 准确率报表&#xa;· 导出功能" vertex="1">
+          <mxGeometry height="80" width="200" x="450" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---388" parent="eJc6jVxUnBGlWZZIOV---384" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;align=left;" value="可视化展示&#xa;· 标注框展示&#xa;· 热力图&#xa;· 轨迹追踪&#xa;· 对比视图" vertex="1">
+          <mxGeometry height="80" width="200" x="670" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---389" parent="eJc6jVxUnBGlWZZIOV---384" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;align=left;" value="数据存储&#xa;· 结果入库&#xa;· 文件存储&#xa;· 历史归档&#xa;· 备份恢复" vertex="1">
+          <mxGeometry height="80" width="200" x="890" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eJc6jVxUnBGlWZZIOV---390" parent="eJc6jVxUnBGlWZZIOV---384" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;align=left;" value="接口输出&#xa;· 标准JSON&#xa;· 回调通知&#xa;· 第三方对接&#xa;· 实时推送" vertex="1">
+          <mxGeometry height="80" width="180" x="1110" y="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
